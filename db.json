@@ -1,5 +1,5 @@
 {
-  "Products": [
+  "products": [
     {
       "id": "1",
       "name": "tashkent",
@@ -161,7 +161,7 @@
       "description": "48MP camera, 4K/60fps, obstacle sensing"
     }
   ],
-  "Users": [
+  "users": [
     {
       "id": "1",
       "name": "James Anderson",
@@ -343,7 +343,7 @@
       "country": "Sweden"
     }
   ],
-  "Cars": [
+  "cars": [
     {
       "id": "1",
       "make": "Toyota",

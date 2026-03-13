@@ -3,7 +3,7 @@ import Dashboard from './components/Dashboard'
 import "./assets/block/general.scss";
 const App = () => {
   return (
-    <div>
+    <div className='dashboard__wr'>
       <Dashboard/>
     </div>
   )

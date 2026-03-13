@@ -1,0 +1,72 @@
+.main {
+  flex-grow: 1;
+  padding: 5% 10%;
+
+  &__table {
+    // display: flex;
+    // flex-direction: column;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__table-head {
+    border-bottom: 1px solid gray;
+  }
+
+  &__table-hd {
+    text-align: start;
+    padding: 10px;
+    font-size: 13px;
+    color: gray;
+  }
+
+  &__table-d {
+    margin-top: 5px !important;
+    text-align: start;
+    padding: 10px;
+    background-color: rgba(24, 85, 109, 0.322);
+    color: white;
+    font-weight: 600;
+  }
+
+  &__table-more {
+    width: 25px;
+  }
+
+  &__table-body {
+    margin-top: 5px;
+  }
+
+  &__table-r {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    // background-color: blue;
+  }
+
+  &__table-svgs {
+    width: 25px;
+    margin-left: 5px;
+    background-color: rgba(128, 128, 128, 0.274);
+    padding: 5px;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.5);
+      cursor: pointer;
+    }
+  }
+
+  &__table-animate {
+    animation-name: table;
+    animation-duration: 0.3s;
+  }
+}
+
+
+@keyframes table {
+  0%{
+    transform: translateY(-10px) scale(1.05);
+  }100%{
+    transform: translateY(0px), scale(1);
+  }
+}

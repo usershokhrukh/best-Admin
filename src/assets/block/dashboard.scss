@@ -1,6 +1,57 @@
 .dashboard {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  width: 100%;
   min-height: 100vh;
+  position: relative;
+  // background-color: blue;
+  flex-wrap: wrap;
+
+
+  &__right {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgb(10, 9, 24);
+  }
+
+  &__navbar {
+    background-color: rgba(27, 128, 187, 0.719);
+    width: 100%;
+    padding: 15px;
+  }
+
+  &__title {
+    color: white;
+  }
+
+  &__hr {
+    position: absolute;
+    width: 100%;
+    border: 3px solid rgba(204, 168, 8, 0.685);
+  }
+}
+
+.loader {
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide-right {
+  0% {
+    left: -50%;
+    width: 10%;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    left: 10%;
+    width: 90%;
+  }
+}
+
+
+.none {
+  display: none !important;
 }
