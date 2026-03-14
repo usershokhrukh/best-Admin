@@ -24,8 +24,6 @@ const Products = () => {
         });
       });
   }, []);
-
-  console.log(products);
   
   function loaderF(bool) {
     const loader = document.querySelector(".dashboard__hr");

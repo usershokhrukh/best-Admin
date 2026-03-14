@@ -1,8 +1,29 @@
 .main {
   flex-grow: 1;
-  padding: 5% 10%;
+  padding: 100px 10%;
+
+  &__table-top {
+    top: -40px;
+    right: 0px;
+    position: absolute;
+  }
+  &__table-add {
+    align-self: end;
+    margin-top: 10px;
+    background-color: rgb(119, 0, 255);
+    padding: 8px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid rgb(114, 6, 177);
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
 
   &__table {
+    position: relative;
     // display: flex;
     // flex-direction: column;
     width: 100%;
@@ -62,11 +83,11 @@
   }
 }
 
-
 @keyframes table {
-  0%{
+  0% {
     transform: translateY(-10px) scale(1.05);
-  }100%{
+  }
+  100% {
     transform: translateY(0px), scale(1);
   }
 }

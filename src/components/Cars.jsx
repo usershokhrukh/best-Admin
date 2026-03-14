@@ -34,8 +34,6 @@ const Cars = () => {
         });
       });
   }, []);
-
-  console.log(cars);
   
   function loaderF(bool) {
     const loader = document.querySelector(".dashboard__hr");

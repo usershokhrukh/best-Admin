@@ -34,8 +34,6 @@ const Users = () => {
         });
       });
   }, []);
-
-  console.log(users);
   
   function loaderF(bool) {
     const loader = document.querySelector(".dashboard__hr");
