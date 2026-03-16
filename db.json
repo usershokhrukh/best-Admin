@@ -1,54 +1,6 @@
 {
   "products": [
     {
-      "id": "10",
-      "name": "Lego Technic Bugatti",
-      "price": 449.99,
-      "category": "Toys",
-      "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&q=80",
-      "description": "3,599-piece engineering masterpiece set"
-    },
-    {
-      "id": "11",
-      "name": "Patagonia Down Jacket",
-      "price": 299.99,
-      "category": "Clothing",
-      "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=400&q=80",
-      "description": "800-fill-power down insulated jacket"
-    },
-    {
-      "id": "12",
-      "name": "Samsung 65\" QLED TV",
-      "price": 1299.99,
-      "category": "Electronics",
-      "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=400&q=80",
-      "description": "4K QLED Smart TV with Quantum HDR"
-    },
-    {
-      "id": "13",
-      "name": "Weber Spirit II Gas Grill",
-      "price": 499.99,
-      "category": "Outdoor",
-      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80",
-      "description": "3-burner gas grill with iGrill compatibility"
-    },
-    {
-      "id": "14",
-      "name": "Instant Pot Duo 7-in-1",
-      "price": 89.99,
-      "category": "Kitchen",
-      "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400&q=80",
-      "description": "Multi-use pressure cooker, 8 quart"
-    },
-    {
-      "id": "15",
-      "name": "Adidas Ultraboost 22",
-      "price": 189.99,
-      "category": "Footwear",
-      "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&q=80",
-      "description": "Responsive running shoes with BOOST midsole"
-    },
-    {
       "id": "16",
       "name": "Ray-Ban Aviator Classic",
       "price": 163.99,
@@ -81,12 +33,24 @@
       "description": "Professional percussive therapy device"
     },
     {
-      "id": "20",
-      "name": "DJI Mini 3 Pro Drone",
-      "price": 759.99,
-      "category": "Photography",
-      "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400&q=80",
-      "description": "48MP camera, 4K/60fps, obstacle sensing"
+      "id": [
+        "14"
+      ],
+      "name": [
+        "Instant Pot Duo 7-in-1"
+      ],
+      "price": [
+        89.99
+      ],
+      "category": [
+        "Kitchen"
+      ],
+      "description": [
+        "Multi-use pressure cooker, 8 quart"
+      ],
+      "image": [
+        "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400&q=80"
+      ]
     }
   ],
   "users": [

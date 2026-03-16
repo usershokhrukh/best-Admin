@@ -12,6 +12,52 @@
     width: 100vw;
 
   }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    // background-color: red;
+  }
+
+  &__form-boxes {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(20, 20, 24);
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  &__form-button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(0, 128, 0, 0.555);
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__labels {
+    font-weight: 600;
+    color: white;
+  }
+
+  &__inputs {
+    border: 1px solid rgb(6, 6, 63);
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(30, 30, 48);
+    outline: none;
+    flex-grow: 1;
+    padding: 10px;
+  }
   display: flex;
   flex-direction: column;
   gap: 10px;

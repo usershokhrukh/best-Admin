@@ -3,9 +3,14 @@
   padding: 100px 10%;
 
   &__table-top {
-    top: -40px;
-    right: 0px;
-    position: absolute;
+    top: 0px;
+    right: -100px;
+    position: sticky;
+    // width: 100%;
+    background-color: rgb(10, 9, 24);
+    margin-bottom: 10px;
+    padding: 10px;
+    // border-radius: 8px;
   }
   &__table-add {
     align-self: end;
