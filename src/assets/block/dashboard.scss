@@ -1,3 +1,4 @@
+/*
 .dashboard {
   display: flex;
   width: 100%;
@@ -54,4 +55,81 @@
 
 .none {
   display: none !important;
+}
+*/
+
+// --- MENING KODIM (GitHub Dark Mode) ---
+.dashboard {
+  display: flex;
+  width: 100%;
+
+  &__hr {
+    border: none;
+    height: 2px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    
+    &.loader {
+      background: linear-gradient(90deg, var(--gh-blue), #a371f7);
+      background-size: 200% 100%;
+      animation: loadingGradient 1.5s infinite linear;
+    }
+  }
+
+  &__right {
+    margin-left: 260px; // Sidebar kengligi bilan bir xil
+    width: calc(100% - 260px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gh-bg);
+  }
+
+  &__navbar {
+    height: 60px;
+    background-color: var(--gh-bg-secondary);
+    border-bottom: 1px solid var(--gh-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gh-text-primary);
+    letter-spacing: -0.5px;
+  }
+
+  .main {
+    padding: 30px;
+    min-height: calc(100vh - 70px);
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+
+    &__right {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .main {
+      padding: 15px; // Mobilda paddingni kamaytiramiz
+    }
+  }
+}
+
+@keyframes loadingGradient {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
 }

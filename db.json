@@ -1,122 +1,23 @@
 {
   "products": [
     {
-      "id": "16",
-      "name": "Ray-Ban Aviator Classic",
-      "price": 163.99,
-      "category": "Accessories",
-      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&q=80",
-      "description": "Iconic metal frame aviator sunglasses"
-    },
-    {
-      "id": "17",
-      "name": "Bose QuietComfort 45",
-      "price": 279.99,
-      "category": "Electronics",
-      "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&q=80",
-      "description": "Wireless noise cancelling headphones"
-    },
-    {
       "id": "18",
-      "name": "YETI Rambler 30 oz Tumbler",
-      "price": 39.99,
-      "category": "Outdoors",
-      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&q=80",
-      "description": "Double-wall vacuum insulated tumbler"
+      "price": "39.99",
+      "category": "shokhrukh",
+      "description": "Double-wall vacuum insulated tumbler",
+      "name": "YETI Rambler 30 oz Tumblerweffwef",
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&q=80"
     },
     {
       "id": "19",
-      "name": "Theragun Pro Massager",
       "price": 599.99,
       "category": "Health",
-      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80",
-      "description": "Professional percussive therapy device"
-    },
-    {
-      "id": [
-        "14"
-      ],
-      "name": [
-        "Instant Pot Duo 7-in-1"
-      ],
-      "price": [
-        89.99
-      ],
-      "category": [
-        "Kitchen"
-      ],
-      "description": [
-        "Multi-use pressure cooker, 8 quart"
-      ],
-      "image": [
-        "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400&q=80"
-      ]
+      "description": "Professional percussive therapy device",
+      "name": "Theragun Pro Massagerversion",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80"
     }
   ],
   "users": [
-    {
-      "id": "1",
-      "name": "James Anderson",
-      "email": "james.anderson@gmail.com",
-      "avatar": "https://i.pravatar.cc/150?img=1",
-      "role": "Admin",
-      "joined": "2021-03-15",
-      "country": "United States"
-    },
-    {
-      "id": "2",
-      "name": "Sofia Martinez",
-      "email": "sofia.martinez@outlook.com",
-      "avatar": "https://i.pravatar.cc/150?img=2",
-      "role": "User",
-      "joined": "2022-07-22",
-      "country": "Spain"
-    },
-    {
-      "id": "3",
-      "name": "Liam Thompson",
-      "email": "liam.thompson@yahoo.com",
-      "avatar": "https://i.pravatar.cc/150?img=3",
-      "role": "Moderator",
-      "joined": "2020-11-05",
-      "country": "Canada"
-    },
-    {
-      "id": "4",
-      "name": "Yuki Tanaka",
-      "email": "yuki.tanaka@gmail.com",
-      "avatar": "https://i.pravatar.cc/150?img=4",
-      "role": "User",
-      "joined": "2023-01-18",
-      "country": "Japan"
-    },
-    {
-      "id": "5",
-      "name": "Emma Wilson",
-      "email": "emma.wilson@icloud.com",
-      "avatar": "https://i.pravatar.cc/150?img=5",
-      "role": "User",
-      "joined": "2022-09-30",
-      "country": "UK"
-    },
-    {
-      "id": "6",
-      "name": "Carlos Reyes",
-      "email": "carlos.reyes@gmail.com",
-      "avatar": "https://i.pravatar.cc/150?img=6",
-      "role": "Admin",
-      "joined": "2019-05-12",
-      "country": "Mexico"
-    },
-    {
-      "id": "7",
-      "name": "Priya Sharma",
-      "email": "priya.sharma@hotmail.com",
-      "avatar": "https://i.pravatar.cc/150?img=7",
-      "role": "User",
-      "joined": "2023-04-07",
-      "country": "India"
-    },
     {
       "id": "8",
       "name": "Noah Garcia",
@@ -137,12 +38,12 @@
     },
     {
       "id": "10",
-      "name": "Felix Müller",
-      "email": "felix.muller@web.de",
-      "avatar": "https://i.pravatar.cc/150?img=10",
       "role": "User",
       "joined": "2022-12-01",
-      "country": "Germany"
+      "country": "Germany",
+      "name": "Felix Müller",
+      "avatar": "https://i.pravatar.cc/150?img=10",
+      "email": "felix.muller@web.de"
     },
     {
       "id": "11",
@@ -206,90 +107,9 @@
       "role": "User",
       "joined": "2022-08-17",
       "country": "South Korea"
-    },
-    {
-      "id": "18",
-      "name": "Lucas Petrov",
-      "email": "lucas.petrov@mail.ru",
-      "avatar": "https://i.pravatar.cc/150?img=18",
-      "role": "Admin",
-      "joined": "2018-07-04",
-      "country": "Russia"
-    },
-    {
-      "id": "19",
-      "name": "Amara Okafor",
-      "email": "amara.okafor@gmail.com",
-      "avatar": "https://i.pravatar.cc/150?img=19",
-      "role": "User",
-      "joined": "2023-07-31",
-      "country": "Ghana"
-    },
-    {
-      "id": "20",
-      "name": "Henrik Johansson",
-      "email": "henrik.j@gmail.com",
-      "avatar": "https://i.pravatar.cc/150?img=20",
-      "role": "User",
-      "joined": "2021-11-16",
-      "country": "Sweden"
     }
   ],
   "cars": [
-    {
-      "id": "1",
-      "make": "Toyota",
-      "model": "Land Cruiser 300",
-      "year": 2023,
-      "price": 85000,
-      "color": "Pearl White",
-      "image": "https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=400&q=80"
-    },
-    {
-      "id": "2",
-      "make": "BMW",
-      "model": "M4 Competition",
-      "year": 2023,
-      "price": 74900,
-      "color": "Sao Paulo Yellow",
-      "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=400&q=80"
-    },
-    {
-      "id": "3",
-      "make": "Tesla",
-      "model": "Model S Plaid",
-      "year": 2023,
-      "price": 108990,
-      "color": "Midnight Silver",
-      "image": "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=400&q=80"
-    },
-    {
-      "id": "4",
-      "make": "Mercedes-Benz",
-      "model": "G 63 AMG",
-      "year": 2023,
-      "price": 182450,
-      "color": "Obsidian Black",
-      "image": "https://images.unsplash.com/photo-1564518894561-eeca2a7e3c8d?w=400&q=80"
-    },
-    {
-      "id": "5",
-      "make": "Porsche",
-      "model": "911 Turbo S",
-      "year": 2023,
-      "price": 216150,
-      "color": "GT Silver Metallic",
-      "image": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=400&q=80"
-    },
-    {
-      "id": "6",
-      "make": "Ford",
-      "model": "F-150 Raptor R",
-      "year": 2023,
-      "price": 109145,
-      "color": "Code Orange",
-      "image": "https://images.unsplash.com/photo-1520031441872-265e4ff70366?w=400&q=80"
-    },
     {
       "id": "7",
       "make": "Lamborghini",

@@ -1,3 +1,4 @@
+/*
 .sidebar {
   background-color: rgba(6, 14, 29, 0.966);
   // padding: 30px;
@@ -39,6 +40,103 @@
 
     &__link {
       flex-grow: 1;
+    }
+  }
+}
+*/
+
+// --- MENING KODIM (GitHub Dark Mode) ---
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: var(--gh-bg-secondary);
+  border-right: 1px solid var(--gh-border);
+  color: var(--gh-text-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  z-index: 100;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    color: var(--gh-text-secondary);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: rgba(177, 186, 196, 0.12);
+      color: var(--gh-text-primary);
+    }
+
+    &.active {
+      background-color: rgba(56, 139, 253, 0.1); // Moviy fon
+      color: var(--gh-text-primary);
+      border-color: transparent;
+      font-weight: 600;
+      position: relative;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20px;
+        width: 3px;
+        background-color: var(--gh-blue);
+        border-radius: 0 2px 2px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid var(--gh-border);
+    padding: 10px 0;
+    z-index: 99;
+
+    &__list {
+      flex-direction: row;
+      justify-content: flex-start;
+      overflow-x: auto; // Sig'masa skroll bo'lishi uchun
+      white-space: nowrap;
+      padding-bottom: 5px;
+    }
+
+    &__link {
+      margin-bottom: 0;
+      justify-content: center;
+      
+      &.active::before {
+        left: 50%;
+        top: auto;
+        bottom: -10px; // Aktiv chiziqchani pastga tushiramiz
+        transform: translateX(-50%);
+        height: 3px;
+        width: 20px;
+        border-radius: 3px 3px 0 0;
+      }
     }
   }
 }

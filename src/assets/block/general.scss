@@ -1,3 +1,4 @@
+/*
 *{
   padding: 0;
   margin: 0;
@@ -11,4 +12,51 @@ li {
 
 body {
   overflow-x: hidden;
+}
+*/
+
+// --- MENING KODIM (GitHub Dark Mode) ---
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --gh-bg: #0d1117;
+  --gh-bg-secondary: #161b22;
+  --gh-border: #30363d;
+  --gh-text-primary: #c9d1d9;
+  --gh-text-secondary: #8b949e;
+  --gh-blue: #58a6ff;
+  --gh-green: #238636;
+  --gh-green-hover: #2ea043;
+  --gh-red: #da3633;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--gh-bg);
+  color: var(--gh-text-primary);
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Yordamchi klasslar
+.none {
+  display: none !important;
+}
+
+.dashboard__wr {
+  width: 100%;
+  min-height: 100vh;
 }

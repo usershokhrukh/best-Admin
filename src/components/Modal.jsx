@@ -19,7 +19,7 @@ const Modal = ({status, opened, setDataItems, dataL}) => {
             toast.error("Error acquired!");
             throw new Error(error);
           });
-      }, [status.id, status.status, status.select]);
+      }, []);
 
       return (
         <div className="modal__wr">

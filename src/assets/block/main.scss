@@ -1,3 +1,4 @@
+/*
 .main {
   flex-grow: 1;
   padding: 100px 10%;
@@ -95,4 +96,152 @@
   100% {
     transform: translateY(0px), scale(1);
   }
+}
+*/
+
+// --- MENING KODIM (GitHub Dark Mode) ---
+.main__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--gh-bg-secondary);
+  border: 1px solid var(--gh-border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 20px;
+
+  &-top {
+    position: relative;
+    top: 20px;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between; /* Chap va o'ng tomonni ajratish uchun */
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 16px;
+    // border-bottom: 1px solid var(--gh-border); /* Ajratuvchi chiziq */
+  }
+
+  &-add {
+    background-color: var(--gh-green);
+    color: #ffffff;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 0 transparent, 0 0 transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+      background-color: var(--gh-green-hover);
+      border-color: rgba(240, 246, 252, 0.1);
+    }
+    
+    &:active {
+      background-color: #2ea043;
+      box-shadow: inset 0 2px 0 rgba(0,0,0,0.1);
+    }
+  }
+
+  &-head {
+    background-color: #161b22; // Header sal ajralib turishi uchun
+    border-bottom: 1px solid var(--gh-border);
+  }
+
+  &-hd {
+    padding: 16px 24px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gh-text-secondary);
+    border-bottom: 1px solid var(--gh-border);
+  }
+
+  &-body {
+    background-color: var(--gh-bg-secondary);
+  }
+
+  &-r {
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: rgba(177, 186, 196, 0.04);
+    }
+
+    &:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  &-d {
+    padding: 16px 24px;
+    font-size: 14px;
+    color: var(--gh-text-primary);
+    border-bottom: 1px solid var(--gh-border);
+    vertical-align: middle;
+
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid var(--gh-border);
+    }
+    
+    span {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &-svgs {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    color: var(--gh-text-secondary);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--gh-blue); // Edit
+    }
+    
+    &:last-child:hover {
+      color: var(--gh-red); // Delete
+    }
+  }
+  
+  &-animate {
+    animation: fadeIn 0.4s ease-out forwards;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__table {
+    display: block;
+    overflow-x: auto; // Gorizontal skroll
+    white-space: nowrap; // Matnlar pastga tushib ketmasligi uchun
+
+    &-top {
+      flex-direction: column; // Tugma va sarlavhani ustma-ust qilish
+      align-items: flex-start;
+      gap: 10px;
+      left: 0;
+      top: 0;
+    }
+
+    &-add {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
